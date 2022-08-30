@@ -11,16 +11,13 @@
     <link rel="stylesheet" href="/src/styles/text.css">
     <link rel="stylesheet" href="/src/styles/Buttons.css">
     <link rel="stylesheet" href="/src/styles/Inputs.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./src/pages/Login/index.css">
+    <script defer src="/src/pages/Login/script.js"></script>
     <title>Login Page</title>
 </head>
 <body>
-    <header class="hidden">
-        <img src="/src/img/logo punk.png" alt="">
-    </header>
     <main>
         <div class="container">
-
             <section class="container__login">
                 <div class="container__form">
                     <div class="header__login">
@@ -56,9 +53,9 @@
                                 <button class="button-default">Login</button>
                             </div>
     
-                            <p class="text-3">Esqueceu sua senha?</p>
+                            <p id="recovery-password" class="text-3">Esqueceu sua senha?</p>
     
-                            <p class="text-2">Não esta registrado? <span class="text-3">Crie sua conta .</span></p>
+                            <p class="text-2">Não esta registrado? <span id="criarConta" class="text-3">Crie sua conta .</span></p>
                         </div>
                     </form>
                 </div>
@@ -68,5 +65,37 @@
             </section>
         </div>
     </main>    
+    <div id="container__modal" class="container__modal hidden">
+        <div class="modal">
+            <div class="modal__header">
+                <h3 class="text-1">Esqueceu a senha?</h3>
+                <span id="closeModal" class="modal__close">X</span>
+            </div>
+            <form class="modal__body">
+               <p class="text-2">Você recebera um email com o passo a passo para a recuperação de senha.</p>
+                <input placeholder="Digite seu email" class="input-1" type="text">
+                <button class="button-3"><span class="text-2">Enviar email</span> </button>
+            </form>
+        </div>
+    </div>
+    <div id="abrir" class="hidden">
+        <div id="container__modal" class="container__modal__cadastro">
+            <div class="modalCadastro">
+                <div class="modal__header__cadastro">
+                    <h3 class="text-1">Cadastrar</h3>
+                    <span id="closeModalcadastro" class="modal__close">X</span>
+                </div>
+                <form class="modal__body__cadastro">
+                   <p class="text-2">Preencha os campos para realizar o cadastro</p>
+                   <label class="text-2" for="">Email:</label>
+                    <input placeholder="Digite seu email" class="input-default" type="text">
+                    <label class="text-2" for="">Senha:</label>
+                    <input placeholder="Digite sua senha" class="input-default" type="text">
+                    <button class="button-3"><span class="text-2">Cadastrar</span> </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>

@@ -21,3 +21,15 @@
     border: 1px solid transparent;
     margin: 10px 0 10px 0;
 }
+
+.button-3{
+    height: 35px;
+    width: 263px;
+    border-radius: var(--border-radius-1);
+    background-color: var(--color-secondary);
+    color: var(--color-grey-3);
+    border: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin: 10px 0 10px 0;
+}
