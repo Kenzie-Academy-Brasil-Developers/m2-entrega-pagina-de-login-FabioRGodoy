@@ -1,0 +1,23 @@
+.button-default{
+    height: 40px;
+    width: 250px;
+    border-radius: var(--border-radius-1);
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin: 10px 0 10px 0;
+}
+
+.button-2{
+    height: 40px;
+    width: 250px;
+    border-radius: var(--border-radius-1);
+    background-color: var(--color-primary);
+    color: var(--color-grey-3);
+    border: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin: 10px 0 10px 0;
+}

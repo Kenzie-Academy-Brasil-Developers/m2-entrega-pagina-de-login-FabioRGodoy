@@ -6,35 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/styles/GobalCss.css">
+    <link rel="stylesheet" href="/src/styles/text.css">
+    <link rel="stylesheet" href="/src/styles/Buttons.css">
+    <link rel="stylesheet" href="/src/styles/Inputs.css">
     <link rel="stylesheet" href="./index.css">
     <title>Login Page</title>
 </head>
 <body>
+    <header class="hidden">
+        <img src="/src/img/logo punk.png" alt="">
+    </header>
     <main>
-        <section class="container__login">
-            <div class="container__form">
-                <h1></h1>
-                <h2>Login</h2>
-                <p>Faça o login usando sua conta Google.</p>
-                <hr>
-                <form action="" class="form__login">
-                    <label for="Email*"></label>
-                    <input placeholder="Digite seu email!" type="text">
-                    <label for="">Password*</label>
-                    <input placeholder="Digite sua senha!" type="text">
-                    <input type="checkbox">
-                    <span>Manter-me contectado</span>
-                    <span>Esqueceu sua senha?</span>
-                    <button>Login</button>
-                    <p>Não esta registrado? <span>Crie sua conta .</span></p>
-                </form>
-            </div>
-            <div class="container__image">
-                <img src="/src/img/homer.jpg" alt="">
-            </div>
-        </section>
+        <div class="container">
+
+            <section class="container__login">
+                <div class="container__form">
+                    <div class="header__login">
+                        <img src="/src/img/logo punk.png" alt="">
+                        <h2 class="text-1">Login</h2>
+                        <p class="text-2">Faça o login usando sua conta Google.</p>
+                        <button class="button-default">
+                            <img src="/src/img/google.png" alt="">
+                            Entrar com Google
+                        </button>
+                    </div>
+                    <hr>
+                    <form action="" class="form__login">
+    
+                        <label class="text-2" for="">Email*</label>
+    
+                        <input class="input-default" placeholder="Digite seu email" type="text">
+    
+                        <label class="text-2" for="">Senha*</label>
+    
+                        <input class="input-default" placeholder="Digite sua senha" type="text">
+    
+                        <div class="container__footer">
+    
+                            <div class="container__checkbox">
+    
+                                <input type="checkbox">
+    
+                                <span class="text-2">Manter-me contectado</span>
+    
+                            </div>                        
+                            <div class="container__button">
+                                <button class="button-default">Login</button>
+                            </div>
+    
+                            <p class="text-3">Esqueceu sua senha?</p>
+    
+                            <p class="text-2">Não esta registrado? <span class="text-3">Crie sua conta .</span></p>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="container__image">
+                <img src="/src/img/monkeys.jpg" alt="">
+            </section>
+        </div>
     </main>    
 </body>
 </html>
