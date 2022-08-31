@@ -83,7 +83,7 @@ header img{
 }
 
 .modal{
-    margin: 25vh 35vw;
+    margin: 100px auto;
     width: 290px;
     height: 220px;
     background-color: var(--color-primary);
