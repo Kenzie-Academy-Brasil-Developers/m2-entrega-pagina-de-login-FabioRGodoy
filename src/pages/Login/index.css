@@ -39,6 +39,7 @@ header img{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 .header__login button img{
@@ -124,6 +125,7 @@ header img{
 
 .modalCadastro button{
     width: 265px;
+    cursor: pointer;
     
 }
 
