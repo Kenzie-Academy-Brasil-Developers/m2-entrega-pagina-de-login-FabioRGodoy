@@ -79,9 +79,6 @@ header img{
     position: fixed;
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .modal{
@@ -148,13 +145,16 @@ header img{
     
     .container__login{
         width: 490px;
-        min-height: 400px;
+        height: 570px;
         margin: 30px 0 10px 10%;
         z-index: 1;
+        border-top-right-radius: 0px; 
+        border-bottom-right-radius: 0px;
     }
 
     .container__form{
         width: 450px;
+        
     }
 
     .header__login{
@@ -170,12 +170,13 @@ header img{
         width: 490px;
         height: 400px;
         margin-top: 30px;
-        border-radius: var(--border-radius-1);
     }
     .container__image img{
         width: 490px;
         height: 570px;      
-        border-radius: var(--border-radius-1);  
+        border-radius: var(--border-radius-1);
+        border-top-left-radius: 0px; 
+        border-bottom-left-radius: 0px;
     }
     .modal{
         width: 400px;
