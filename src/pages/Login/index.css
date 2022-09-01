@@ -141,6 +141,10 @@ header img{
     gap: 10px;
 }
 
+.modal__close{
+    cursor: pointer;
+}
+
 
 
 @media (min-width: 974px){
